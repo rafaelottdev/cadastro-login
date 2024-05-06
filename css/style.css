@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Hind+Siliguri:wght@300;400;500;600;700&family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main-content {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-video {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container-content {
+    width: 80%;
+
+    display: flex;
+    padding: 0px 50px 0px 50px;
+}
+
+.container-form-title {
+    padding: 10px 20px;
+
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: rotateZ(4deg) translateX(-50%);
+
+    border-radius: 3px;
+
+    font-size: 2em;
+    font-family: 'Jersey 25';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: white;
+    background-color: #7D2F12;
+}
+
+.sign-up-video-container {
+    width: 40%;
+    height: 500px;
+
+    background-color: red;
+}
+
+.sign-up-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    width: 60%;
+    height: 500px;
+
+    position: relative;
+    padding-top: 40px;
+
+    background-color: rgba(20, 19, 19, 0.879);
+}
+
+.container-1 {
+
+    
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-2 > div {
+
+}
+
+.container-2 > div > button {
+    width: 300px;
+    height: 40px;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    border-radius: 3px;
+
+    font-size: 1.1em;
+    font-family: 'Freeman';
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: white;
+    background-color: #1b100bd8;
+}
+
+.container-2 > div > a {
+    font-size: 1.1em;
+
+    border-bottom: 1px solid white;
+    color: white;   
+}
+
+.form {
+    width: 100%;
+    height: 340px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-title {
+    margin-bottom: 3px;
+
+    font-size: 1.4em;
+    font-family: 'Freeman';
+
+    color: white;
+}
+
+.input {
+    width: 300px;
+    height: 36px;
+    border-radius: 3px;
+
+    padding: 0px 5px;
+
+    font-size: 1.05em;
+    font-family: 'Poppins', sans-serif;
+
+    letter-spacing: 1px;
+
+    color: white;
+    background-color: #1b100bd8;
+}

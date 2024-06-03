@@ -84,6 +84,8 @@
 .login-input-container { /* mesmo codigo: .input-container */
     display: flex;
     flex-direction: column;
+
+    position: relative;
 }
 
 .login-input-title { /* mesmo codigo: .input-title */
@@ -100,7 +102,7 @@
     height: 36px;
     border-radius: 3px;
 
-    padding: 0px 5px;
+    padding: 0px 30px 0px 5px;
 
     font-size: 1.05em;
     font-family: 'Poppins', sans-serif;
@@ -109,6 +111,16 @@
 
     color: white;
     background-color: #00122A;
+}
+
+.eye-icon { /* mesmo codigo */
+    color: white;
+    position: absolute;
+    bottom: 11px;
+    right: 10px;
+
+    font-size: .8em;
+    cursor: pointer;
 }
 
 .container-btn-sign-up { /* mesmo codigo: .container-btn-login */

@@ -1,0 +1,13 @@
+.transition-box {
+    background: red;
+    animation: background-move 3s infinite;
+}
+
+@keyframes background-move {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}

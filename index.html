@@ -22,6 +22,10 @@
                 <video class="sign-up-video" autoplay loop muted>
                     <source src="./videos/video.mp4" type="video/mp4">
                 </video>
+
+                <!-- <div class="warning">
+                    <p>Cadastro registrado com sucesso!</p>
+                </div> -->
             </section>
 
             <section class="form-container">
@@ -33,38 +37,40 @@
                     <form class="form">
                         <div class="input-container">
                             <label for="" class="input-title email-title">Email</label>
-                            <input type="email" placeholder="" required class="input email">
+                            <input type="email" placeholder="email@gmail.com" class="input email">
                         </div>
 
                         <div class="input-container">
                             <label for="" class="input-title name-title">Nome completo</label>
-                            <input type="text" placeholder="" required class="input name">
+                            <input type="text" placeholder="nome" class="input name">
                         </div>
 
                         <div class="input-container">
                             <label for="" class="input-title birth-title">Data de nascimento</label>
-                            <input type="text" placeholder="" required class="input birth-data">
+                            <input type="text" placeholder="dd/mm/aaaa" class="input birth-data">
                         </div>
 
                         <div class="input-container">
                             <label for="" class="input-title sex-title">Sexo</label>
-                            <input type="text" placeholder="" required class="input sex">
+                            <input type="text" placeholder="M, F ou Outro" class="input sex">
                         </div>
 
                         <div class="input-container">
                             <label for="" class="input-title password-title">Senha</label>
-                            <input type="password" placeholder="" required class="input password">
+                            <input type="password" placeholder="(Senhaforte1)" class="input password">
+                            <i class="fa-solid fa-eye-slash eye-icon"></i>
                         </div>
 
                         <div class="input-container">
                             <label for="" class="input-title confirm-password-title">Confirme a senha</label>
-                            <input type="password" placeholder="" required class="input confirm-password">
+                            <input type="password" placeholder="(Senhaforte1)" class="input confirm-password">
+                            <i class="fa-solid fa-eye-slash eye-icon"></i>
                         </div>
                     </form>
 
                     <section class="container-btn-login">
                         <div>
-                            <button class="sign-up-btn">Enviar</button>
+                            <button class="sign-up-btn snd-btn">Enviar</button>
                         </div>
 
                         <div>
@@ -74,7 +80,10 @@
                 </section>
             </section>
         </section>
-    </main>    
+    </main>
+    
+    <script src="./js/form-validation.js"></script>
+    <script src="./js/showPassword.js"></script>
 </body>
 </html>
 

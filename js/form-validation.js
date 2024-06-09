@@ -1,4 +1,3 @@
-// const sendBtn = document.querySelector('')
 const sendBtn = document.querySelector('.snd-btn')
 const inputList = [... document.querySelectorAll('.input')]
 let state = false
@@ -203,7 +202,8 @@ function addNewAccount(inputList, state) {
 
             else {
                 // mandar aviso dizendo que o login ja existe (com esse email)
-                console.log('ja tem')
+                changeBtnStyle('red')
+                addLetter('Email ja cadastrado', n)
             }    
         }
 }
@@ -215,12 +215,43 @@ function showWarning(sendBtn, state, n) {
         addNewAccount(inputList, state)
     }
 
-    else { // fazendo a animação do btn
+    else {
         changeBtnStyle('red')
 
         setTimeout(() => {sendBtn.disabled = false}, 2000)
         
         addLetter(text, n)
+    }
+}
+
+function accountVerify(state) {
+    let emailValue = inputList[0].value
+    let passwordValue = inputList[1].value
+    let jsonLocalStorageData = JSON.parse(localStorage.getItem(`account:${emailValue}`))
+
+    if(jsonLocalStorageData != null && jsonLocalStorageData.email == emailValue && jsonLocalStorageData.senha == passwordValue) {
+        inputList[0].style.border = '2px solid green'
+        inputList[1].style.border = '2px solid green'
+
+        changeBtnStyle('green')
+
+        setTimeout(() => {sendBtn.disabled = false}, 2000)
+        
+        addLetter('Entrando...', n)
+
+        setTimeout(() => {window.location.href = '../home-page.html'}, 2001)
+
+    }
+
+    else {
+        inputList[0].style.border = '2px solid red'
+        inputList[1].style.border = '2px solid red'
+
+        changeBtnStyle('red')
+
+        setTimeout(() => {sendBtn.disabled = false}, 2000)
+        
+        addLetter('Login incorreto', n)
     }
 }
 
@@ -237,11 +268,16 @@ function verifyFields(evet) {
         }
     }
 
-    showWarning(sendBtn, state, n)
-    
+    if(evet.target.classList.contains('login') || evet.target.classList.contains('login-btn')) {
+        accountVerify(state)
+    }
+
+    else {
+        showWarning(sendBtn, state, n)
+    }
 }
 
 sendBtn.addEventListener('click', verifyFields)
 
 // olho ta mt pequeno pra clicar
-// fazer (linha 205) depois ver a situação do login (verificar se o login existe, e os erros que vai acontecer nele)
+// showWarningCadastro e showWarningLogin (só que tudo em ingles claro)

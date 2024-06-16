@@ -278,6 +278,3 @@ function verifyFields(evet) {
 }
 
 sendBtn.addEventListener('click', verifyFields)
-
-// olho ta mt pequeno pra clicar
-// showWarningCadastro e showWarningLogin (só que tudo em ingles claro)

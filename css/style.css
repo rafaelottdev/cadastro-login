@@ -58,7 +58,7 @@
     background-color: red;
 }
 
-.sign-up-video {
+.video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -104,7 +104,7 @@
     cursor: pointer;
 }
 
-.login-btn {
+.go-btn {
     font-size: 1.1em;
 
     border-bottom: 1px solid white;

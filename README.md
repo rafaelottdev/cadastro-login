@@ -1,5 +1,5 @@
-# Sistema de login e cadastro
- Um sistema basico simulando o login e cadastro de um usuario, feito em HTML, CSS e JS.
+# Sistema de cadastro e login
+ Um sistema basico simulando o cadastro e login de um usuario, feito em HTML, CSS e JS.
  Informações como email, nome e senha são guardadas pelo cadastro e validadas pelo login.
  
  Os dados guardados são verificados quando a tentativa de login é feita, onde só poderá logar caso o 

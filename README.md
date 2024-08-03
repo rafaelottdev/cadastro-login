@@ -14,7 +14,7 @@
  - Regex - Validar os inputs do formulario
  - JS funcional - Executar tarefas unicas
 
-### Link
+### Link do site
  - [Cadastro e login](https://rafaelottdev.github.io/login-cadastro/)
 
 ### A fazer
